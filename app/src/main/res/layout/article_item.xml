@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="4dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="269dp"
+            android:layout_marginLeft="269dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:paddingStart="@dimen/Padding_lest"
+            android:paddingLeft="@dimen/Padding_lest"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/title" />
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/Padding_lest"
+            android:paddingLeft="@dimen/Padding_lest"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/title" />
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginRight="234dp"
+            android:paddingStart="@dimen/Padding_lest"
+            android:paddingLeft="@dimen/Padding_lest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="@string/author" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:paddingEnd="@dimen/Padding_lest"
+            android:paddingRight="@dimen/Padding_lest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            tools:text="2019-02-12" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

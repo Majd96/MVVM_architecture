@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVM_architecture</string>
+    <string name="title">Google</string>
+    <string name="author">author</string>
+</resources>
